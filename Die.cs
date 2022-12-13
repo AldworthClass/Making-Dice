@@ -20,7 +20,13 @@ namespace Making_Dice
         public Die(int roll)
         {
             _generator = new Random();
-            _roll = roll;
+            // Ensures a valid roll
+            if (roll < 1)
+                _roll = 1;
+            else if (roll > 6)
+                _roll = 6;
+            else
+                _roll = roll;
         }
 
         public int Roll { get { return _roll; } }
