@@ -88,8 +88,6 @@ namespace Making_Dice
                     Console.WriteLine("|o o|");
                     Console.WriteLine(" ---");
                     break;
-
-
             }
         }
     }
